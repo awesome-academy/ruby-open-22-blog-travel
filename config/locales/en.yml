@@ -114,6 +114,9 @@ en:
       new: "Create your account"
       signup: "SignUp"
       loginwith: "Or login with"
+    create:
+      welcome: Welcome %{name} to Blog Travel
+      waring: There was an error while trying to authenticate you
   controllers:
     session:
       err: "Login information is incorrect"
@@ -173,4 +176,5 @@ en:
   not_found: "Not found"
   hotel: "Hotel"
   restaurant: "Restaurant"
+  error_login_facebook: There was an error while trying to authenticate you
   login_first: Please Login

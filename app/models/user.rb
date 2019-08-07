@@ -62,6 +62,18 @@ class User < ApplicationRecord
     @get_bookmark_place.present?
   end
 
+  def self.from_omniauth auth
+    where(provider: auth[Settings.user.provider], uid: auth[Settings.user.uid]).
+      first_or_initialize.tap do |user|
+        user.provider = auth.provider
+        user.uid = auth.uid
+        user.name = auth.info.name
+        user.email = auth.info.email
+        user.password = Settings.user.password
+        user.save!
+      end
+  end
+
   private
 
   def create_activation_digest

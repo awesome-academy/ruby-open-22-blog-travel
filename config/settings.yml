@@ -9,6 +9,12 @@ uploaders:
     thumb_w: 118
     thumb_h: 100
     content: 800
+session:
+  remember_value: "1"
+user:
+  provider: "provider"
+  uid: "uid"
+  password: "SunAsterisk"
 VALID_EMAIL_REGEX: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
 maxName: 200
 maxEmail: 200

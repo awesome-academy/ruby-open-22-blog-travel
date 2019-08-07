@@ -112,6 +112,9 @@ vi:
       new: "Tạo mới tài khoản"
       signup: "Đăng ký"
       loginwith: "Hoặc đăng nhập với"
+    create:
+      welcome: Chào mừng %{name} đến với Blog Travel
+      waring: Có lỗi xảy ra khi chúng tôi xác thực tài khoản của bạn
   controllers:
     session:
       err: "Thông tin đăng nhập không chính xác"
@@ -171,4 +174,5 @@ vi:
   not_found: "Không tìm thấy"
   hotel: "Khách sạn"
   restaurant: "Nhà hàng"
+  error_login_facebook: Xảy ra lỗi khi xác thực tài khoản của bạn
   login_first: Vui lòng đăng nhập
