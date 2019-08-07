@@ -1,0 +1,7 @@
+<% if @destroy == "Blog" %>
+  $(".bookmark-blog-<%= Blog.get_blog(@bookmark.bookmarkable_id).first.id %>")
+    .html("<%= j render('bookmarks/bookmark', blog: Blog.get_blog(@bookmark.bookmarkable_id).first) %>");
+<% else %>
+  $(".bookmark-blog-<%= Place.get_place(@bookmark.bookmarkable_id).first.id %>")
+    .html("<%= j render('bookmarks/bookmark', place: Place.get_place(@bookmark.bookmarkable_id).first) %>");
+<% end %>

@@ -77,13 +77,6 @@ h4 {
 
 // --- Header-Footer ---
 
-img {
-  vertical-align: middle;
-  border-style: none;
-  width: 20px;
-
-}
-
 .static {
   text-align: left;
 }
@@ -107,7 +100,7 @@ div.static{
 }
 
 .header_custom {
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 
 .footer_custom {
@@ -141,8 +134,13 @@ div.static{
 // --- Blog ---
 
 .title {
- margin-left: 413px;
- padding-top: 20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 60px;
+  border: 2px solid black;
+  line-height: 60px;
+  margin-top: 13px;
 }
 
 .box {
@@ -150,7 +148,12 @@ div.static{
   width: 27%;
   height: 250px;
   margin-left: 53px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.box_user {
+  display: inline-block;
+  width: 46%;
 }
 
 .cp_blog {
@@ -160,6 +163,7 @@ div.static{
 .cover_photo_blog_index {
   width: 300px;
   height: 200px;
+  overflow: hidden;
 }
 
 .topic_blog {
@@ -220,6 +224,10 @@ div.static{
   border: 1px solid $gray-medium-light;
   border-radius: 0.25rem;
   max-width: 100%;
+  transition: 0.5s;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .box_related {
@@ -232,6 +240,36 @@ div.static{
 .submit {
   margin-top: 30px;
 }
+
+.view_more {
+  display: block;
+  text-align: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-left: 470px;
+  margin-bottom: 20px;
+}
+
+.paginate_blog {
+  margin-left: 385px;
+}
+
+// --- End Blog ---
+
+// --- User ---
+
+.all_user {
+  margin-bottom: 20px;
+}
+
+.user_info {
+
+}
+
+// --- End User ---
 
 display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
   display: flex;

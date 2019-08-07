@@ -2,7 +2,8 @@ class PlacesController < ApplicationController
   before_action :find_place, only: %i(show edit update destroy)
 
   def index
-    @places = Place.send(params[:status]).page(params[:page]).per Settings.paginate
+    @places = Place.send(params[:status]).page(params[:page])
+      .per Settings.paginate
     @title = t params[:status]
   end
 

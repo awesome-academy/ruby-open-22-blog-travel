@@ -1,9 +1,9 @@
 class BlogsController < ApplicationController
   before_action :load_blog, except: %i(index new create)
-  before_action :logged_in_user, except: %i(new create show)
+  before_action :logged_in_user, except: %i(show)
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.sort_by_time.page(params[:page]).per 9
   end
 
   def new
@@ -45,7 +45,7 @@ class BlogsController < ApplicationController
 
   def destroy
     if @blog.destroy
-      lash[:success] = t ".success_destroy"
+      flash[:success] = t ".success_destroy"
       redirect_to blogs_path
     else
       flash[:danger] = t ".failed_destroy"

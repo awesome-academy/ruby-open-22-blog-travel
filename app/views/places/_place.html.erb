@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-4">
-    <%= image_tag place.photo.url, class: "photo" if place.photo? %>
+    <%= image_tag place.photo.url, class: "photo" %>
   </div>
   <div class="col-8">
     <div class="name_place">
@@ -23,5 +23,6 @@
     <%= link_to t(".delete"), place, method: :delete,
       data: { confirm: t(".sure") } %>
     <%= link_to t(".edit"), edit_place_path(place) %>
+    <%= render "bookmarks/form_bookmark", place: place %>
   </div>
 </div><hr>

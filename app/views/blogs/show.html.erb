@@ -1,4 +1,4 @@
-<% provide :title, t(".title_show") %>
+<% provide :title, @blog.topic %>
 <div class="container pt-5">
   <div class="row">
     <div class="col-8">
@@ -9,13 +9,19 @@
           </div>
           <% if current_user? @blog.user %>
           <div class="col-1">
+            <span>
             <div class="dropdown">
               <i class="fa fa-cog dropdown-toggle" aria-hidden="true" data-toggle="dropdown"></i>
               <div class="dropdown-menu">
                 <%= link_to t(".dd_edit"), edit_blog_path, class: "dropdown-item" %>
                 <%= link_to t(".dd_delete"), @blog, method: :delete, data: {confirm: t(".delete_confirm")}, class: "dropdown-item text-danger" %>
               </div>
+            </span>
             </div>
+          </div>
+          <% else %>
+          <div class="col-1">
+            <%= render "bookmarks/form_bookmark", blog: @blog %>
           </div>
           <% end %>
         </div>

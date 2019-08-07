@@ -2,6 +2,8 @@ blogs:
   show:
     take_5: 5
     take_3: 3
+  all_blog:
+    take_6: 6
 uploaders:
   picture:
     thumb_w: 118
