@@ -72,6 +72,7 @@ en:
       dd_delete: Delete
       delete_confirm: Do you want to delete it?
       like: "Likes"
+      comment: "comments"
     create:
       success_create: Create Success
       failed_create: Create Failed
@@ -165,6 +166,13 @@ en:
       enter_cost: "Enter cost"
       photo: "Photo"
       submit: "Submit"
+  comments:
+    comment:
+      sure: "Are you sure ?"
+      delete: "Delete"
+    comment_form:
+      add: "Add comment"
+      comment: "Comment"
   create_success: "Created success"
   create_fail: "Created fail"
   delete_success: "Deleted success"

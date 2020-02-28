@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
     resources :blogs do
       resources :likes
+      resources :comments
     end
 
     get "/signup", to: "users#new"

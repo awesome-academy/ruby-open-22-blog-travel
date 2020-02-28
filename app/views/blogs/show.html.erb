@@ -47,7 +47,10 @@
       </span><hr>
       <span id="like-size-<%= @blog.id %>">
         <%= @blog.likes.size %>
-      </span> <%= t ".like" %>
+      </span> <%= t ".like" %><br>
+      <%= @blog.comments.count %> <%= t ".comment" %><br><br>
+      <%= render "comments/comment_form", commentable: @commentable, comment_new: @comment, parent_id:nil %>
+      <%= comments_tree_for @commentable.comments.hash_tree(limit_depth: 2), @commentable, @comment %>
     </div>
     <div class="col-4">
       <div>

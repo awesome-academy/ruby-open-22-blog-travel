@@ -72,6 +72,7 @@ vi:
       dd_delete: Xóa
       delete_confirm: Bạn chắc chắn muốn xóa chứ?
       like: "lượt thích"
+      comment: "bình luận"
     create:
       success_create: Tạo Blog thành công
       failed_create: Tạo Blog thất bại, vui lòng thử lại
@@ -163,6 +164,13 @@ vi:
       enter_cost: "Nhập giá"
       photo: "Ảnh"
       submit: "Xác nhận"
+  comments:
+    comment:
+      sure: "Chắc chắn xóa ?"
+      delete: "Xóa"
+    comment_form:
+      add: "Thêm bình luận"
+      comment: "Bình luận"
   create_success: "Tạo thành công"
   create_fail: "Tạo thất bại"
   delete_success: "Xóa thành công"
