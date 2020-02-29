@@ -17,7 +17,7 @@ gem "jquery-rails"
 gem "kaminari"
 gem "mini_magick"
 gem "pry-rails", "~> 0.3.9"
-gem "puma", "~> 3.11"
+gem "puma", "~> 3.12"
 gem "rails"
 gem "rubocop", "~> 0.54.0", require: false
 gem "sass-rails", "~> 5.0"
